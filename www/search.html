@@ -1,107 +1,76 @@
-<!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
+<!DOCTYPE HTML> 
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="test.css" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <title>Maak je eigen cocktail</title>
+<head>
+<title>Swipe 2</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
+<link href='style.css' rel='stylesheet'/>
+
 </head>
 <body>
-    
-    
-    
 
-   <header class='masthead'>
-  <div class='brand-container'>
-    <a href='#'>
-      <span class='brand-initials'>Es</span>
-      <span class='brand-name'>Elemental Shift</span>
-    </a>
+<h1>Swipe 2</h1>
+
+
+
+<div id='mySwipe' style='max-width:50px;margin:0 auto' class='swipe'>
+  <div class='swipe-wrap'>
+    <div><b>0</b></div>
+    <div><b>1</b></div>
+    <div><b>2</b></div>
+    <div><b>3</b></div>
+    <div><b>4</b></div>
+    <div><b>5</b></div>
+    <div><b>6</b></div>
+    <div><b>7</b></div>
+    <div><b>8</b></div>
+    <div><b>9</b></div>
+    <div><b>10</b></div>
+    <div><b>11</b></div>
+    <div><b>12</b></div>
+    <div><b>13</b></div>
+    <div><b>14</b></div>
+    <div><b>15</b></div>
+    <div><b>16</b></div>
+    <div><b>17</b></div>
+    <div><b>18</b></div>
+    <div><b>19</b></div>
+    <div><b>20</b></div>
   </div>
-  <nav>
-    <div class='nav-container'>
-      <div>
-        <input id='slider1' name='slider1' type='checkbox'>
-        <label class='slide has-child' for='slider1'>
-          <span class='element'>Bg</span>
-          <span class='name'>Blog</span>
-        </label>
-        <div class='child-menu'>
-          <a href='#'>Recent</a>
-          <a href='#'>Archives</a>
-          <a href='#'>Categories</a>
-        </div>
-      </div>
-      <div>
-        <a class='slide' href='#'>
-          <span class='element'>Po</span>
-          <span class='name'>Portfolio</span>
-        </a>
-      </div>
-      <div>
-        <input id='slider2' name='slider2' type='checkbox'>
-        <label class='slide has-child' for='slider2'>
-          <span class='element'>Xp</span>
-          <span class='name'>Laboratory</span>
-        </label>
-        <div class='child-menu'>
-          <a href='#'>PHP</a>
-          <a href='#'>Javascript</a>
-          <a href='#'>Css</a>
-          <a href='#'>Ruby</a>
-          <a href='#'>Python</a>
-          <a href='#'>Design</a>
-        </div>
-      </div>
-      <div>
-        <a class='slide' href='#'>
-          <span class='element'>Ab</span>
-          <span class='name'>About</span>
-        </a>
-      </div>
-      <div>
-        <a class='slide' href='#'>
-          <span class='element'>C</span>
-          <span class='name'>Contact</span>
-        </a>
-      </div>
-    </div>
-  </nav>
-  <div class='social-container'>
-    <span>
-      <a class='social-roll github' href='#'></a>
-    </span>
-    <span>
-      <a class='social-roll twitter' href='#'></a>
-    </span>
-    <span>
-      <a class='social-roll linkedin' href='#'></a>
-    </span>
-    <span>
-      <a class='social-roll rss' href='#'></a>
-    </span>
-  </div>
-</header>
+</div>
+
+
+
+<div style='text-align:center;padding-top:20px;'>
+  
+  <button onclick='mySwipe.prev()'>prev</button> 
+  <button onclick='mySwipe.next()'>next</button>
+
+</div>
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src='swipe.js'></script>
+<script>
+
+// pure JS
+var elem = document.getElementById('mySwipe');
+window.mySwipe = Swipe(elem, {
+  // startSlide: 4,
+  // auto: 3000,
+  // continuous: true,
+  // disableScroll: true,
+  // stopPropagation: true,
+  // callback: function(index, element) {},
+  // transitionEnd: function(index, element) {}
+});
+
+// with jQuery
+// window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
+
+</script>
+
 </body>
 </html>

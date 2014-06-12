@@ -404,3 +404,18 @@ padding-top:30px;
 .arrow_box a{
 	text-decoration:none;
 }
+
+.arrow_box2 {
+	margin-left:15px;;
+	padding: 10px;
+	float:left;
+	position: relative;
+	background: #e63a5c;
+	border: 1px solid #fff;
+	font-size:15px;
+}
+
+.arrow_box2 a{
+	text-decoration:none;
+}
+
