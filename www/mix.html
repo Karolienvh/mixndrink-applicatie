@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <title>Maak je eigen cocktail</title>
+</head>
+<body>
+    <script>
+	    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
+    //
+    function onDeviceReady() {
+        // Now safe to use the PhoneGap AP
+			var ingredients = ['test', 'test3'];
+document.getElementById("result").innerHTML = localStorage.array;
+    }
+Array.prototype.removeByValue = function(val) {
+	for(var i=0; i<this.length; i++) {
+		if(this[i] == val) {
+			this.splice(i, 1);
+			break;
+		}
+	}
+}
+ if(typeof(Storage) !== "undefined") {
+        if (localStorage.array) {
+            localStorage.array = ingredients;
+        } else {
+            localStorage.array = "test";
+        }
+        document.getElementById("result").innerHTML = localStorage.array;
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+function addIngredient(control)
+{
+ingredient = control.id;
+ingredients[ingredients.length] = ingredient;
+}
+
+
+function removeIngredient(control)
+{
+test = control.id;
+ingredients.removeByValue(test);
+document.getElementById("ingredients").innerHTML = ingredients;
+
+}
+</script>
+
+    <div>
+		<div id="deel1">
+      
+			<nav role="navigation" id="access">
+			<a class="skip-link icon-reorder" title="Accéder au menu" href="#menu"><img id="menu-icon" src="img/menu_icoon.png" alt="menu"/></a>
+    
+			<ul id="menu">
+           	<li class="active"><a class="icon-home" href="start.html">Make your own cocktail</a></li>
+            	<li><a class="icon-group" href="best.html">Top recipies</a></li>
+                <li><a class="icon-leaf" href="search.html">Inpiration</a></li>
+			</ul>
+      		</nav>
+      </div>
+      <h1>Make your own cocktail!</h1>
+       
+<div>
+
+    </div>
+
+
+        <div id="full">
+        	<h2>Step 2: Look 'n feel</h2>
+        </div>
+         <p id="result"></p>
+        
+     
+<!-- ---------------------------------------------------------------- -->     
+     
+     
+     
+     <div id="left">
+        
+        		<!-- galzen -->
+        		<a href="#" id="glass-show" class="showLink" onclick="showHide('glass');return false;">Glasses</a></p>
+			<div id="glass" class="more">
+				<span onclick="changeImage('img/1.png')"><img src="img/1.png"/></span>
+				<span onclick="changeImage('img/2.png')"><img src="img/2.png"/></span>
+				<span onclick="changeImage('img/3.png')"><img src="img/3.png"/></span>
+            	<p><a href="#" id="glass-hide" class="hideLink" onclick="showHide('glass');return false;">Enough glasses</a></p>
+            </div>
+            
+       		 <!-- decoration -->
+           <a href="#" id="decoration-show" class="showLink" onclick="showHide('decoration');return false;">The perfect decoration</a></p>
+			<div id="decoration" class="more">
+				<span onclick="changeImage('img/1.png')"><img src="img/1.png"/></span>
+                
+				<span onclick="changeImage('img/2.png')"><img src="img/2.png"/></span>
+				<span onclick="changeImage('img/3.png')"><img src="img/3.png"/></span>
+            	<p><a href="#" id="decoration-hide" class="hideLink" onclick="showHide('decoration');return false;">The perfect decoration</a></p>
+            </div> 
+            
+            
+	  </div>
+
+		<div id="right">
+			<img id="imgDisp" src="img/1.png" />
+		</div>
+
+        <div id="full">
+        	<p>volledige breedte</p>
+        </div>
+     
+     <div id="terug"><p><a href="start.html">Ga terug</a></p></div>
+     
+	</div>
+	
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+		app.initialize();
+	</script>
+
+</body>
+</html>

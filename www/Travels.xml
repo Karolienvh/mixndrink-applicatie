@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<travels>    
+    <website id="1">
+        <sitename>MakeMyTrip.com</sitename>
+        <description>MakeMyTrip.com is one of the good website providing Travel services to book oonline Flight,Hotel,Train and Bus tickets with guranteed lowest prices and provides new deals , offers and discount coupons every week and help you save money upto 20% while you travel.</description>
+        <img>travellogos/makemytrip-logo.jpg
+    </website>
+    <website id="2">
+        <sitename>GoIbibo.com</sitename>
+        <description>GoIbibo.com is one of the good website providing Travel services to book oonline Flight,Hotel,Train and Bus tickets with guranteed lowest prices and provides new deals , offers and discount coupons every week and help you save money upto 20% while you travel.</description>
+        <img>travellogos/goibibo_logo.png
+    </website>
+    <website id="3">
+        <sitename>Abhibus.com</sitename>
+        <description>Abhibus.com is one of the good website providing Travel services to book oonline Flight,Hotel,Train and Bus tickets with guranteed lowest prices and provides new deals , offers and discount coupons every week and help you save money upto 20% while you travel.</description>
+        <img>travellogos/abhibus-logo.png
+    </website>
+    <website id="4">
+        <sitename>Travelyaari.com</sitename>
+        <description>Travelyaari.com is one of the good website providing Travel services to book oonline Flight,Hotel,Train and Bus tickets with guranteed lowest prices and provides new deals , offers and discount coupons every week and help you save money upto 20% while you travel.</description>
+        <img>travellogos/travelyaari-com-logo-w240.png
+    </website>
+    <website id="5">
+        <sitename>Redbus.in</sitename>
+        <description>Redbus.com is one of the good website providing Travel services to book oonline Flight,Hotel,Train and Bus tickets with guranteed lowest prices and provides new deals , offers and discount coupons every week and help you save money upto 20% while you travel.</description>
+        <img>travellogos/logo_bc9228d_163.jpg
+    </website>
+    <website id="6">
+        <sitename>Expedia.co.in</sitename>
+        <description>Expedia.co.in is one of the good website providing Travel services to book oonline Flight,Hotel,Train and Bus tickets with guranteed lowest prices and provides new deals , offers and discount coupons every week and help you save money upto 20% while you travel.</description>
+        <img>travellogos/expedia-logo.png
+    </website>
+    <website id="7">
+        <sitename>Other websites</sitename>
+        <description>We Provide more websites that offer good Travel services to book oonline Flight,Hotel,Train and Bus tickets with guranteed lowest prices and provides new deals , offers and discount coupons every week and help you save money upto 20% while you travel.</description>
+        <img>travellogos/travel-agency-logos.jpg
+    </website>
+</travels>
