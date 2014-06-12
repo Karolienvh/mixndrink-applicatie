@@ -35,6 +35,7 @@ body {
 }
 a {
 	color: #fff;
+	text-decoration:none;
 }
 /* Portrait layout (default) */
 .app {
@@ -68,7 +69,7 @@ a {
 
 h1 {
     font-size:24px;
-    font-weight:normal;
+    font-weight:bold;
     margin:0px;
 	margin-bottom:10px;
     overflow:visible;
@@ -82,9 +83,13 @@ h2 {
     margin:0px;
     overflow:visible;
     padding:0px;
-    text-align:center;
+    text-align:left;
+	padding-left:15px;
 }
 
+p {
+	padding-left:15px;
+}
 .event {
     border-radius:4px;
     -webkit-border-radius:4px;
@@ -100,7 +105,7 @@ h2 {
 }
 
 .event.received {
-    background-color:#00a76b;
+    background-color:#e63a5c;
     display:none;
 }
 
@@ -121,7 +126,10 @@ h2 {
     -webkit-animation:fade 3000ms infinite;
 }
 
-
+.blinkfast {
+    animation:fade 2000ms infinite;
+    -webkit-animation:fade 2000ms infinite;
+}
 #access {
   zoom: 1;
   margin-bottom:30px;
@@ -206,7 +214,7 @@ h2 {
 
 #left {
 	
-	width: 40%;
+
 	padding-left:10px;
 	float:left;
 }
@@ -216,14 +224,14 @@ h2 {
 
 #left img{
 	padding-left:5px;
-	padding-bottom: 5px;
-	max-width: 50px;
-	max-height:50px;
+	max-width: 65px;
+	max-height:65px;
+
 }
 
 #right {
 
-	max-width: 50%;
+
 	padding-left:10px;
 	float: left;
 	margin: auto;
@@ -231,8 +239,10 @@ h2 {
 }
 
 #right img{
-	margin: auto;
-	vertical-align:middle;
+	padding-left:5px;
+	padding-bottom: 5px;
+	max-width: 50px;
+	max-height:50px;
 }
 
 #imgDisp {
@@ -381,3 +391,16 @@ padding-top:30px;
   }
 }
 
+.arrow_box {
+	margin-right:20px;
+	padding: 10px;
+	float:right;
+	position: relative;
+	background: #e63a5c;
+	border: 1px solid #fff;
+	font-size:15px;
+}
+
+.arrow_box a{
+	text-decoration:none;
+}
