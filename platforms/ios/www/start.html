@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 
-<html><head>
+<html>
+    <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
 
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <meta name="msapplication-tap-highlight" content="no" />
-        
-	    <title>Maak je eigen cocktail</title>
+        <title>Maak je eigen cocktail</title>
 </head>
 <body>
     <script>
@@ -22,8 +22,8 @@
 document.getElementById("result").innerHTML = localStorage.array;
     }
 
-	var ingredients = ['test', 'test3'];
-
+	
+var ingredients = [];
 Array.prototype.removeByValue = function(val) {
 	for(var i=0; i<this.length; i++) {
 		if(this[i] == val) {
@@ -69,16 +69,12 @@ document.getElementById("ingredients").innerHTML = ingredients;
     
 			<ul id="menu">
            	<li class="active"><a class="icon-home" href="start.html">Make your own cocktail</a></li>
-            	<li><a class="icon-group" href="best.html">Top recipies</a></li>
                 <li><a class="icon-leaf" href="search.html">Inpiration</a></li>
 			</ul>
       		</nav>
           </div>
-          <h1>Make your own cocktail!</h1>
-        <div id="step">
-        
-        	<h2>Step 1: Ingredients</h2>
-        </div>
+       <h1>Choose ingredients</h1>
+			<p id="result"></p>
 
 <div>
 
@@ -86,9 +82,27 @@ document.getElementById("ingredients").innerHTML = ingredients;
 		<div id="left">
         
         		<!-- juices -->
-        		<a href="#" id="fruits-show" class="showLink" onclick="showHide('fruits');return false;">I want some juice</a></p>
-			<div id="fruits" class="more">
-            <p><a href="#" id="fruits-hide" class="hideLink" onclick="showHide('fruits');return false;">I have enough juice</a></p>
+        		<a href="#" id="fruits-show" class="showLink" onclick="showHide('fruits');return false;"><img src="img/juices.png" /></a>
+               
+       		 <!-- alcohol -->
+           <a href="#" id="alcohol-show" class="showLink" onclick="showHide('alcohol')"><img src="img/alcohol.png" /></a>
+			
+            
+            <!-- soda -->
+           <a href="#" id="soda-show" class="showLink" onclick="showHide('soda');return false;"><img src="img/others.png" /></a>
+		
+            
+            <!-- extras -->
+           <a href="#" id="extras-show" class="showLink" onclick="showHide('extras');return false;"><img src="img/extras.png" /></a>
+			
+            
+            
+		</div>
+
+		<div id="right">
+        
+            <div id="fruits" class="more">
+				<a href="#" id="fruits-hide" class="hideLink" onclick="showHide('fruits');return true;"><img src="img/juices2.png" /></a>
 				<span><img id="apple" src="img/juices/apple.png" onClick="addIngredient(this)" /></span>
 				<span><img id="banana" src="img/juices/banana.png" onClick="addIngredient(this)"/></span>
 				<span><img id="cherry" src="img/juices/cherries.png"onClick="addIngredient(this)"/></span>
@@ -100,12 +114,8 @@ document.getElementById("ingredients").innerHTML = ingredients;
             	
             </div>
             
-       		 <!-- alcohol -->
-           <a href="#" id="alcohol-show" class="showLink" onclick="showHide('alcohol');return false;">I want alcohol</a></p>
-			<div id="alcohol" class="more">
-            <p><a href="#" id="alcohol-hide" class="hideLink" onclick="showHide('alcohol');return false;">I have enough alcohol</a></p>
-            
-            
+            <div id="alcohol" class="more">
+            <a href="#" id="alcohol-hide" class="hideLink" onclick="showHide('alcohol');return false;"><img src="img/alcohol2.png" /></a>
 				<span><img id="bacardi" src="img/alcohol/bacardi.png" onClick="addIngredient(this)"/></span>
                 <span><img id="campari" src="img/alcohol/campari.png" onClick="addIngredient(this)"/></span>
                 <span><img id="gin" src="img/alcohol/gin.png" onClick="addIngredient(this)"/></span>
@@ -117,38 +127,34 @@ document.getElementById("ingredients").innerHTML = ingredients;
             	
             </div>
             
-            <!-- soda -->
-           <a href="#" id="soda-show" class="showLink" onclick="showHide('soda');return false;">I want some other drinks</a></p>
-			<div id="soda" class="more">
-            <p><a href="#" id="soda-hide" class="hideLink" onclick="showHide('soda');return false;">I have enough other drinks</a></p>
-				<span>Coke</span>
-				<span>Sprite</span>
-                <span>Fanta</span>
-                <span>Water</span>
-				<span>Redbull</span>
+            
+            	<div id="soda" class="more">
+            <a href="#" id="soda-hide" class="hideLink" onclick="showHide('soda');return false;"><img src="img/others2.png" /></a>
+				<span><img id="cocacola" src="img/others/cocacola.png" onClick="addIngredient(this)"/></span>
+				<span><img id="sprite" src="img/others/sprite.png" onClick="addIngredient(this)"/></span>
+                <span><img id="fanta" src="img/others/fanta.png" onClick="addIngredient(this)"/></span>
+                <span><img id="water" src="img/others/water.png" onClick="addIngredient(this)"/></span>
+				<span><img id="redbull" src="img/others/redbull.png" onClick="addIngredient(this)"/></span>
             	
             </div>
             
-            <!-- extras -->
-           <a href="#" id="extras-show" class="showLink" onclick="showHide('extras');return false;">I want other things</a></p>
-			<div id="extras" class="more">
-                        	<p><a href="#" id="extras-hide" class="hideLink" onclick="showHide('extras');return false;">I have enough other things</a></p>
-				<span>Sugar</span>
-				<span>Salt</span>
-				<span>Pepper</span>
-                <span>Ice</span>
+            <div id="extras" class="more">
+                    <a href="#" id="extras-hide" class="hideLink" onclick="showHide('extras');return false;"><img src="img/extras2.png" /></a>
+				<span><img id="sugar" src="img/extras/sugar.png" onClick="addIngredient(this)"/></span>
+				<span><img id="ice" src="img/extras/ice.png" onClick="addIngredient(this)"/></span>
+				<span><img id="salt" src="img/extras/salt.png" onClick="addIngredient(this)"/></span>
+                <span><img id="pepper" src="img/extras/pepper.png" onClick="addIngredient(this)"/></span>
 
             </div>
             
             
+            
 		</div>
+         <div id="full">
 
-		<div id="right">
-        <h3>My ingredients</h3>
-			<div id="result"></div>
-		</div>
-		<div id="mix">
-        <a href="mix.html">Mix your drink!</a>
+		<div id="mix" class="blinkfast">
+        <a class="arrow_box" href="mix.html">Mix your drink!</a>
+        </div>
         </div>
         </div>
 

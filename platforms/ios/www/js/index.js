@@ -80,5 +80,12 @@ function showHide(shID) {
 			
 		}
 
+		function changeImage2(imgName)
+		{
+     		image = document.getElementById('imgDisp2');
+     		image.src = imgName;
+			
+			
+		}
 
 
