@@ -37,54 +37,54 @@ document.getElementById("result").innerHTML = localStorage.array;
 			</ul>
       		</nav>
       </div>
-      <h1>Make your own cocktail!</h1>
 
-        	<h2>Step 2: Look 'n feel</h2>
 
-        <p>Your chosen ingredients</p>
-         <p id="result"></p>
+        	<h1>Look 'n feel</h1>
+
+<div>
+		<br/><p><input type="text" placeholder="Name your cocktail"></p>
+</div>
+        <p>Chosen ingredients</p>
+         <p id="result"></p>     
+     
+     <p id="left"><a href="#" id="glass-show" class="showLink" onclick="showHide('glass');return false;"><img src="img/glazen.png"/></a></p>
+     
         
-     
-<!-- ---------------------------------------------------------------- -->     
-     
-     
-     
-     <div id="left">
-        
-        		<!-- galzen -->
-        		<a href="#" id="glass-show" class="showLink" onclick="showHide('glass');return false;">Glasses</a></p>
+        		<!-- glazen -->
+        		
 			<div id="glass" class="more">
-				<span onclick="changeImage('img/1.png')"><img src="img/1.png"/></span>
-				<span onclick="changeImage('img/2.png')"><img src="img/2.png"/></span>
-				<span onclick="changeImage('img/3.png')"><img src="img/3.png"/></span>
-            	<p><a href="#" id="glass-hide" class="hideLink" onclick="showHide('glass');return false;">Enough glasses</a></p>
+            <p><a href="#" id="glass-show" class="showLink" onclick="showHide('glass');return false;"><img src="img/glazen.png"/></a></p>
+            <div id="leftglasses">
+				<span onclick="changeImage('img/glazen/glas1.png')"><img src="img/glazen/glas1.png"/></span>
+				<span onclick="changeImage('img/glazen/glas2.png')"><img src="img/glazen/glas2.png"/></span>
+				<span onclick="changeImage('img/glazen/glas3.png')"><img src="img/glazen/glas3.png"/></span>
+                            <span onclick="changeImage('img/glazen/glas13.png')"><img src="img/glazen/glas13.png"/></span>
+            <span onclick="changeImage('img/glazen/glas14.png')"><img src="img/glazen/glas14.png"/></span>
+            <span onclick="changeImage('img/glazen/glas15.png')"><img src="img/glazen/glas15.png"/></span>
+                <span onclick="changeImage('img/glazen/glas7.png')"><img src="img/glazen/glas7.png"/></span>
+                <span onclick="changeImage('img/glazen/glas8.png')"><img src="img/glazen/glas8.png"/></span>
+            <span onclick="changeImage('img/glazen/glas9.png')"><img src="img/glazen/glas9.png"/></span>
+            <span onclick="changeImage('img/glazen/glas10.png')"><img src="img/glazen/glas10.png"/></span>
+            <span onclick="changeImage('img/glazen/glas11.png')"><img src="img/glazen/glas11.png"/></span>
+            <span onclick="changeImage('img/glazen/glas12.png')"><img src="img/glazen/glas12.png"/></span>
+
             </div>
-            
-       		 <!-- decoration -->
-           <a href="#" id="decoration-show" class="showLink" onclick="showHide('decoration');return false;">The perfect decoration</a></p>
-			<div id="decoration" class="more">
-				<span onclick="changeImage('img/1.png')"><img src="img/1.png"/></span>
-                
-				<span onclick="changeImage('img/2.png')"><img src="img/2.png"/></span>
-				<span onclick="changeImage('img/3.png')"><img src="img/3.png"/></span>
-            	<p><a href="#" id="decoration-hide" class="hideLink" onclick="showHide('decoration');return false;">The perfect decoration</a></p>
-            </div> 
             
             
 	  </div>
 
-		<div id="right">
-			<img id="imgDisp" src="img/1.png" />
+		<div id="rightglasses">
+			<img id="imgDisp" src="img/glazen/glas1.png" />
 		</div>
 
-        <div id="full">
-        	<p>volledige breedte</p>
-        </div>
-     
+     <div id="full">
      		<div id="start" class="blinkfast">
         <a class="arrow_box2" href="start.html">Go back!</a>
         </div>
-     
+        <div id="start" class="blinkfast">
+        <a class="arrow_box3" href="save.html">Save!</a>
+        </div>
+     </div>
 	</div>
 
 	<script type="text/javascript" src="cordova.js"></script>

@@ -224,8 +224,8 @@ p {
 
 #left img{
 	padding-left:5px;
-	max-width: 65px;
-	max-height:65px;
+	max-width: 75px;
+	max-height:75px;
 
 }
 
@@ -417,5 +417,64 @@ padding-top:30px;
 
 .arrow_box2 a{
 	text-decoration:none;
+}
+.arrow_box3 {
+	margin-right:15px;;
+	padding: 10px;
+	float:right;
+	position: relative;
+	background: #e63a5c;
+	border: 1px solid #fff;
+	font-size:15px;
+}
+
+.arrow_box2 a{
+	text-decoration:none;
+}
+
+#leftglasses {
+	
+	width: 50%;
+	padding-left:10px;
+	float:left;
+}
+
+#leftglasses p {
+	padding-top:0px;
+}
+
+#leftglasses img{
+	padding-left:5px;
+	max-width: 70px;
+	max-height:80px;
+
+}
+
+#rightglasses {
+
+	width: 40%;
+	padding-right:15px;
+	float: right;
+	margin: auto;
+
+}
+
+#rightglasses img{
+	padding-right:15px;
+	padding-bottom: 5px;
+	max-width: 150px;
+	max-height:150px;
+}
+#imgDisp {
+	max-width:120px;
+	max-height:120px;
+
+	margin:0 auto;
+}
+
+#glass img{
+padding-left:5px;
+	max-width: 65px;
+	max-height:65px;
 }
 
