@@ -58,3 +58,27 @@ var app = {
         }).find('.skip-link').append('<span>'+$('#menu .active').text()+'</span>');
     });
 })(jQuery);
+
+function showHide(shID) {
+   if (document.getElementById(shID)) {
+      if (document.getElementById(shID+'-show').style.display != 'none') {
+         document.getElementById(shID+'-show').style.display = 'none';
+         document.getElementById(shID).style.display = 'block';
+      }
+      else {
+         document.getElementById(shID+'-show').style.display = 'inline';
+         document.getElementById(shID).style.display = 'none';
+      }
+   }
+}
+
+		function changeImage(imgName)
+		{
+     		image = document.getElementById('imgDisp');
+     		image.src = imgName;
+			
+			
+		}
+
+
+
