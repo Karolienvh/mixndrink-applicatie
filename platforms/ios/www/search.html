@@ -34,6 +34,24 @@
     function onDeviceReady() {
 	}
 	
+	function addIngredient(control){
+	ingredientnaam = control.name;
+	ingredientnummer = control.id;
+	//checken of al bestaat
+		if(typeof(Storage) !== "undefined"){
+			
+		//	if(localstorage.x){
+			//	sessionstorage.removeItem("x");
+			//} else {
+				sessionstorage.setItem("x", "test");
+			//toevoegen aan sessionstorage
+			//}
+			document.getElementById("result2").innerHTML = sessionstorage.length;
+		} else {
+        document.getElementById("result2").innerHTML = "Sorry, your browser does not support web storage...";
+    	}
+
+    } 
 	
 		</script>
     

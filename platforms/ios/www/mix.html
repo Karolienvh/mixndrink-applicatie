@@ -11,17 +11,35 @@
         <title>Maak je eigen cocktail</title>
 </head>
 <body>
-    <script>
-	    document.addEventListener("deviceready", onDeviceReady, false);
+<script>
+		    document.addEventListener("deviceready", onDeviceReady, false);
 
     // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
     //
     function onDeviceReady() {
         // Now safe to use the PhoneGap AP
-			var ingredients = ['test', 'test3'];
+			
 document.getElementById("result").innerHTML = localStorage.array;
     }
+	
+	var ingredients = ['test', 'test3'];
+	
+Array.prototype.removeByValue = function(val) {
+	for(var i=0; i<this.length; i++) {
+		if(this[i] == val) {
+			this.splice(i, 1);
+			break;
+		}
+	}
+}
 
+function removeIngredient(control)
+{
+test = control.id;
+ingredients.removeByValue(test);
+document.getElementById("ingredients").innerHTML = ingredients;
+
+}
 </script>
 
     <div>
@@ -89,7 +107,7 @@ document.getElementById("result").innerHTML = localStorage.array;
      <div id="terug"><p><a href="start.html">Ga terug</a></p></div>
      
 	</div>
-
+	
 	<script type="text/javascript" src="cordova.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript">

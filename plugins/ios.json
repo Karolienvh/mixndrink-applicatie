@@ -4,8 +4,23 @@
         "uninstalled": []
     },
     "config_munge": {
-        "files": {}
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Mytransition\"><param name=\"ios-package\" value=\"Mytransition\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
     },
-    "installed_plugins": {},
+    "installed_plugins": {
+        "Mytransition": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        }
+    },
     "dependent_plugins": {}
 }
