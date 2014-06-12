@@ -9,8 +9,6 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <meta name="msapplication-tap-highlight" content="no" />
         <title>Maak je eigen cocktail</title>
-</head>
-<body>
     <script>
 	    document.addEventListener("deviceready", onDeviceReady, false);
 
@@ -21,32 +19,30 @@
 			var ingredients = ['test', 'test3'];
 document.getElementById("result").innerHTML = localStorage.array;
     }
-
+function delayedRedirect(){
+    window.location = "search.html"
+}
 </script>
+</head>
 
-    <div>
+<body onLoad="setTimeout('delayedRedirect()', 3000)">
 		<div id="deel1">
       
 			<nav role="navigation" id="access">
 			<a class="skip-link icon-reorder" title="Accéder au menu" href="#menu"><img id="menu-icon" src="img/menu_icoon.png" alt="menu"/></a>
     
 			<ul id="menu">
-           	<li ><a class="icon-home" href="start.html">Make your own cocktail</a></li>
-                <li class="active"><a class="icon-home" href="search.html">Inpiration</a></li>
+           	<li class="active"><a class="icon-home" href="start.html">Make your own cocktail</a></li>
+                <li><a class="icon-leaf" href="search.html">Inpiration</a></li>
 			</ul>
       		</nav>
       </div>
 
 
+<h2>Thank you for saving! You'll be redirected soon.</h2>
+</body>
+</html>
 
-<h1>Get some inspiration</h1>
-
-<div id="inspiration">
-<p><img id="imgDisp2" src="img/cocktail1.png"/></p></div>
-<div id="vote">
-<span onclick="changeImage2('img/cocktail2.png')"><img id="voteup" src="img/love.png"/></span>
-<span onclick="changeImage2('img/cocktail1.png')"><img id="votedown" src="img/hate.png"/></span>
-</div>
 
 
 	<script type="text/javascript" src="cordova.js"></script>
