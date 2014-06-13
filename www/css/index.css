@@ -259,14 +259,13 @@ p {
 #right {
 
 
-	padding-left:10px;
+	padding-left:5px;
 	float: left;
-	margin: auto;
+
 
 }
 
 #right img{
-	padding-left:5px;
 	padding-bottom: 5px;
 	max-width: 50px;
 	max-height:50px;
