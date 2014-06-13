@@ -22,7 +22,7 @@
 document.getElementById("result").innerHTML = localStorage.array;
     }
 
-	
+
 var ingredients = [];
 Array.prototype.removeByValue = function(val) {
 	for(var i=0; i<this.length; i++) {
@@ -45,10 +45,16 @@ ingredients[ingredients.length] = ingredient;
         } else {
             localStorage.array = "";
         }
-        document.getElementById("result").innerHTML = localStorage.array;
+        document.getElementById("result").innerHTML = ingredients;
     } else {
         document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
     }
+
+}
+
+function refreshall(){
+	ingredients = [];
+	document.getElementById("result").innerHTML = ingredients;
 
 }
 
@@ -74,7 +80,7 @@ document.getElementById("ingredients").innerHTML = ingredients;
       		</nav>
           </div>
        <h1>Choose ingredients</h1>
-			<p id="result"></p>
+		<img id="restart" width="30" height="30" onclick="refreshall()"src="img/restart.png"	/><p id="result"></p>
 
 <div>
 
@@ -86,15 +92,15 @@ document.getElementById("ingredients").innerHTML = ingredients;
                
        		 <!-- alcohol -->
            <a href="#" id="alcohol-show" class="showLink" onclick="showHide('alcohol')"><img src="img/alcohol.png" /></a>
-			
+
             
             <!-- soda -->
            <a href="#" id="soda-show" class="showLink" onclick="showHide('soda');return false;"><img src="img/others.png" /></a>
-		
+
             
             <!-- extras -->
            <a href="#" id="extras-show" class="showLink" onclick="showHide('extras');return false;"><img src="img/extras.png" /></a>
-			
+
             
             
 		</div>

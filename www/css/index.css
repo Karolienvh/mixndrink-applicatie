@@ -229,6 +229,23 @@ p {
 
 }
 
+#leftglas {
+	
+
+	padding-left:10px;
+	float:left;
+}
+#leftglas p {
+	padding-top:0px;
+}
+
+#leftglas img{
+	padding-left:5px;
+	max-width: 95px;
+	max-height:95px;
+
+}
+
 #right {
 
 
@@ -432,6 +449,19 @@ padding-top:30px;
 	text-decoration:none;
 }
 
+#restart {
+position: relative;
+float:left;
+padding-left:15px;
+padding-bottom:15px;
+padding-right: 10px;
+}
+
+#restart img{
+	 	max-width: 30px;
+		max-height: 30px;
+	 }
+
 #leftglasses {
 	
 	width: 50%;
@@ -491,3 +521,37 @@ padding-left:5px;
 	max-height:100px;
 	padding-right: 30px;
 }
+
+.animation {
+	/* Landscape layout (with min-width) 
+	-webkit-animation: cssAnimation 2.1761s  20 linear;
+	-moz-animation: cssAnimation 2.1761s  20 linear;
+	-o-animation: cssAnimation 2.1761s  20 linear;*/
+	max-with: 200px;
+	max-height:280px;
+	margin:0 auto;
+	margin-top: 50px;
+	} 
+	
+	.animation img{
+		margin:0 auto;
+		max-with: 200px;
+		max-height:280px;
+	}
+	/*
+	@-webkit-keyframes cssAnimation {
+		from { -webkit-transform:  rotate(4deg) scale(1) skew(1deg) translate(10px); }  to { -webkit-transform:  rotate(360deg) scale(1) skew(0deg) translate(0px); } } 
+		
+	@-moz-keyframes cssAnimation {from { -moz-transform:  rotate(4deg) scale(1) skew(1deg) translate(10px); }  to { -moz-transform:  rotate(360deg) scale(1) skew(0deg) translate(0px); } }
+	
+	 @-o-keyframes cssAnimation {from { -o-transform:  rotate(4deg) scale(1) skew(1deg) translate(10px); }  to { -o-transform:  rotate(360deg) scale(1) skew(0deg) translate(0px); } }
+	 
+	 
+	 */
+	 
+	 .save{
+	 	margin-top: 80px;
+		text-align:center;
+	 }
+	 
+	 
