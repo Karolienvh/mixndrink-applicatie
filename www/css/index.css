@@ -37,6 +37,16 @@ a {
 	color: #fff;
 	text-decoration:none;
 }
+
+input {
+	background-color: white;
+	color: #E63a5c;
+	border: 5px solid white; 
+	font-size: 20px;
+	
+
+}
+
 /* Portrait layout (default) */
 .app {
    /* 170px x 200px */
