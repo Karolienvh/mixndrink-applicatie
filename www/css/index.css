@@ -79,7 +79,6 @@ input {
 
 h1 {
     font-size:24px;
-    font-weight:bold;
     margin:0px;
 	margin-bottom:10px;
     overflow:visible;
@@ -99,6 +98,7 @@ h2 {
 
 p {
 	padding-left:15px;
+	font-size: 20px;
 }
 .event {
     border-radius:4px;
@@ -224,7 +224,7 @@ p {
 
 #left {
 	
-
+witdh: 70%;
 	padding-left:10px;
 	float:left;
 }
@@ -280,7 +280,8 @@ p {
 
 #full {
 clear:both;
-padding-top:30px;
+padding-top:5px;
+width: 100%;
 }
 
 #step {
@@ -291,7 +292,34 @@ padding-top:30px;
 }
 
 
+#ingrientenlinks {
+	clear:both;
+	width: 60%;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	
+	margin-top: 0px;
+}
+#restrechts {
+	with: 60%;
+	position: relative;
+	float: left;
+}
+#mix {
+	max-with: 30%;
+	position:relative;
+	float:right;
+}
 
+#ingrientenlinks p{
+	padding-bottom: 5px;
+	padding-top:5px;
+	margin-top:-10px;
+	margin-bottom: 0px;
+	
+}
 @media only screen and (max-width: 768px) {
   #menu {
     -webkit-transform-style: preserve-3d;
@@ -417,7 +445,7 @@ padding-top:30px;
   }
 }
 
-.arrow_box {
+#arrow_box {
 	margin-right:20px;
 	padding: 10px;
 	float:right;
@@ -427,7 +455,7 @@ padding-top:30px;
 	font-size:15px;
 }
 
-.arrow_box a{
+#arrow_box a{
 	text-decoration:none;
 }
 
@@ -528,7 +556,8 @@ padding-left:5px;
 #vote img{
 	max-with: 100px;
 	max-height:100px;
-	padding-right: 30px;
+	padding-right: 20px;
+	padding-bottom: 20px;
 }
 
 .animation {
@@ -562,5 +591,4 @@ padding-left:5px;
 	 	margin-top: 80px;
 		text-align:center;
 	 }
-	 
 	 

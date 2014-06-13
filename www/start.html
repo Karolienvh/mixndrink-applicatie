@@ -80,11 +80,14 @@ document.getElementById("ingredients").innerHTML = ingredients;
       		</nav>
           </div>
        <h1>Choose ingredients</h1>
-		<img id="restart" width="30" height="30" onclick="refreshall()"src="img/restart.png"	/><p id="result"></p>
+       <div  id="full">
+		<img id="restart" width="30" height="30" onclick="refreshall()"src="img/restart.png"	/>
+</div>
 
-<div>
 
-    </div>
+
+   
+    
 		<div id="left">
         
         		<!-- juices -->
@@ -156,13 +159,19 @@ document.getElementById("ingredients").innerHTML = ingredients;
             
             
 		</div>
-         <div id="full">
+         
+        
+   <div id="ingrientenlinks">
+   <p>Chosen ingredients:</p>
+    <p id="result"></p>
+</div>
+		<div id="mix">
+        
+        <a class="blinkfast" id="arrow_box" href="mix.html">Mix your drink!</a>
+        
+        </div>
+        </div>
 
-		<div id="mix" class="blinkfast">
-        <a class="arrow_box" href="mix.html">Mix your drink!</a>
-        </div>
-        </div>
-        </div>
 
 	<script type="text/javascript" src="cordova.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
